@@ -220,13 +220,6 @@ class MerchantWebService extends \SoapClient
             }
         }
         $options['location'] = 'https://wallet.advcash.com/wsm/merchantWebService';
-        if (LIBXML_VERSION < 20900) {
-            libxml_disable_entity_loader(false);
-        } else {
-            libxml_set_external_entity_loader(static function ($public, $system, $context) {
-                return true;
-            });
-        }
         parent::__construct($wsdl, $options);
     }
 
