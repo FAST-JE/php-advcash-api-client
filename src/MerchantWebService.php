@@ -224,7 +224,7 @@ class MerchantWebService extends \SoapClient
             libxml_disable_entity_loader(false);
         } else {
             libxml_set_external_entity_loader(static function ($public, $system, $context) {
-                return false;
+                return true;
             });
         }
         parent::__construct($wsdl, $options);
