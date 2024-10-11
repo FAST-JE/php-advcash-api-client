@@ -1,5 +1,5 @@
 {
-    "name": "FAST-JE/advcash-api-client",
+    "name": "fastje/advcash-api-client",
     "license": "MIT",
     "type": "library",
     "require": {
